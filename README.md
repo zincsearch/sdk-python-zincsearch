@@ -93,117 +93,117 @@ All URIs are relative to *http://localhost:4080*
 
 Class | Method | HTTP request | Description
 ------------ | ------------- | ------------- | -------------
-*Document* | [**bulk**](docs/Document.md#bulk) | **POST** /api/_bulk | Bulk documents
-*Document* | [**delete**](docs/Document.md#delete) | **DELETE** /api/{index}/_doc/{id} | Delete document
-*Document* | [**es_bulk**](docs/Document.md#es_bulk) | **POST** /es/_bulk | ES bulk documents
-*Document* | [**index**](docs/Document.md#index) | **POST** /api/{index}/_doc | Create or update document
-*Document* | [**index_with_id**](docs/Document.md#index_with_id) | **PUT** /api/{index}/_doc/{id} | Create or update document with id
-*Document* | [**update**](docs/Document.md#update) | **POST** /api/{index}/_update/{id} | Update document with id
-*Index* | [**analyze**](docs/Index.md#analyze) | **POST** /api/_analyze | Analyze
-*Index* | [**analyze_index**](docs/Index.md#analyze_index) | **POST** /api/{index}/_analyze | Analyze
-*Index* | [**create**](docs/Index.md#create) | **POST** /api/index | Create index
-*Index* | [**create_template**](docs/Index.md#create_template) | **POST** /es/_index_template | Create update index template
-*Index* | [**delete**](docs/Index.md#delete) | **DELETE** /api/index/{index} | Delete index
-*Index* | [**delete_template**](docs/Index.md#delete_template) | **DELETE** /es/_index_template/{name} | Delete template
-*Index* | [**get_mapping**](docs/Index.md#get_mapping) | **GET** /api/{index}/_mapping | Get index mappings
-*Index* | [**get_settings**](docs/Index.md#get_settings) | **GET** /api/{index}/_settings | Get index settings
-*Index* | [**get_template**](docs/Index.md#get_template) | **GET** /es/_index_template/{name} | Get index template
-*Index* | [**list**](docs/Index.md#list) | **GET** /api/index | List indexes
-*Index* | [**list_templates**](docs/Index.md#list_templates) | **GET** /es/_index_template | List index teplates
-*Index* | [**refresh**](docs/Index.md#refresh) | **POST** /api/index/{index}/refresh | Resfresh index
-*Index* | [**set_mapping**](docs/Index.md#set_mapping) | **PUT** /api/{index}/_mapping | Set index mappings
-*Index* | [**set_settings**](docs/Index.md#set_settings) | **PUT** /api/{index}/_settings | Set index Settings
-*Index* | [**update_template**](docs/Index.md#update_template) | **PUT** /es/_index_template/{name} | Create update index template
-*Search* | [**msearch**](docs/Search.md#msearch) | **POST** /es/_msearch | Search V2 MultipleSearch for compatible ES
-*Search* | [**search**](docs/Search.md#search) | **POST** /es/{index}/_search | Search V2 DSL for compatible ES
-*Search* | [**search_v1**](docs/Search.md#search_v1) | **POST** /api/{index}/_search | Search V1
-*User* | [**create**](docs/User.md#create) | **POST** /api/user | Create user
-*User* | [**delete**](docs/User.md#delete) | **DELETE** /api/user/{id} | Delete user
-*User* | [**list**](docs/User.md#list) | **GET** /api/user | List user
-*User* | [**login**](docs/User.md#login) | **POST** /api/login | Login
-*User* | [**update**](docs/User.md#update) | **PUT** /api/user | Update user
-*Default* | [**healthz**](docs/Default.md#healthz) | **GET** /healthz | Get healthz
-*Default* | [**version**](docs/Default.md#version) | **GET** /version | Get version
+*Document* | [**bulk**](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/Document.md#bulk) | **POST** /api/_bulk | Bulk documents
+*Document* | [**delete**](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/Document.md#delete) | **DELETE** /api/{index}/_doc/{id} | Delete document
+*Document* | [**es_bulk**](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/Document.md#es_bulk) | **POST** /es/_bulk | ES bulk documents
+*Document* | [**index**](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/Document.md#index) | **POST** /api/{index}/_doc | Create or update document
+*Document* | [**index_with_id**](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/Document.md#index_with_id) | **PUT** /api/{index}/_doc/{id} | Create or update document with id
+*Document* | [**update**](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/Document.md#update) | **POST** /api/{index}/_update/{id} | Update document with id
+*Index* | [**analyze**](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/Index.md#analyze) | **POST** /api/_analyze | Analyze
+*Index* | [**analyze_index**](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/Index.md#analyze_index) | **POST** /api/{index}/_analyze | Analyze
+*Index* | [**create**](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/Index.md#create) | **POST** /api/index | Create index
+*Index* | [**create_template**](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/Index.md#create_template) | **POST** /es/_index_template | Create update index template
+*Index* | [**delete**](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/Index.md#delete) | **DELETE** /api/index/{index} | Delete index
+*Index* | [**delete_template**](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/Index.md#delete_template) | **DELETE** /es/_index_template/{name} | Delete template
+*Index* | [**get_mapping**](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/Index.md#get_mapping) | **GET** /api/{index}/_mapping | Get index mappings
+*Index* | [**get_settings**](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/Index.md#get_settings) | **GET** /api/{index}/_settings | Get index settings
+*Index* | [**get_template**](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/Index.md#get_template) | **GET** /es/_index_template/{name} | Get index template
+*Index* | [**list**](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/Index.md#list) | **GET** /api/index | List indexes
+*Index* | [**list_templates**](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/Index.md#list_templates) | **GET** /es/_index_template | List index teplates
+*Index* | [**refresh**](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/Index.md#refresh) | **POST** /api/index/{index}/refresh | Resfresh index
+*Index* | [**set_mapping**](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/Index.md#set_mapping) | **PUT** /api/{index}/_mapping | Set index mappings
+*Index* | [**set_settings**](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/Index.md#set_settings) | **PUT** /api/{index}/_settings | Set index Settings
+*Index* | [**update_template**](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/Index.md#update_template) | **PUT** /es/_index_template/{name} | Create update index template
+*Search* | [**msearch**](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/Search.md#msearch) | **POST** /es/_msearch | Search V2 MultipleSearch for compatible ES
+*Search* | [**search**](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/Search.md#search) | **POST** /es/{index}/_search | Search V2 DSL for compatible ES
+*Search* | [**search_v1**](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/Search.md#search_v1) | **POST** /api/{index}/_search | Search V1
+*User* | [**create**](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/User.md#create) | **POST** /api/user | Create user
+*User* | [**delete**](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/User.md#delete) | **DELETE** /api/user/{id} | Delete user
+*User* | [**list**](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/User.md#list) | **GET** /api/user | List user
+*User* | [**login**](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/User.md#login) | **POST** /api/login | Login
+*User* | [**update**](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/User.md#update) | **PUT** /api/user | Update user
+*Default* | [**healthz**](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/Default.md#healthz) | **GET** /healthz | Get healthz
+*Default* | [**version**](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/Default.md#version) | **GET** /version | Get version
 
 
 ## Documentation For Models
 
- - [AggregationHistogramBound](docs/AggregationHistogramBound.md)
- - [AuthLoginRequest](docs/AuthLoginRequest.md)
- - [AuthLoginResponse](docs/AuthLoginResponse.md)
- - [AuthLoginUser](docs/AuthLoginUser.md)
- - [CoreIndex](docs/CoreIndex.md)
- - [IndexAnalyzeResponse](docs/IndexAnalyzeResponse.md)
- - [IndexAnalyzeResponseToken](docs/IndexAnalyzeResponseToken.md)
- - [MetaAggregationAutoDateHistogram](docs/MetaAggregationAutoDateHistogram.md)
- - [MetaAggregationDateHistogram](docs/MetaAggregationDateHistogram.md)
- - [MetaAggregationDateRange](docs/MetaAggregationDateRange.md)
- - [MetaAggregationHistogram](docs/MetaAggregationHistogram.md)
- - [MetaAggregationIPRange](docs/MetaAggregationIPRange.md)
- - [MetaAggregationMetric](docs/MetaAggregationMetric.md)
- - [MetaAggregationRange](docs/MetaAggregationRange.md)
- - [MetaAggregationResponse](docs/MetaAggregationResponse.md)
- - [MetaAggregations](docs/MetaAggregations.md)
- - [MetaAggregationsTerms](docs/MetaAggregationsTerms.md)
- - [MetaAnalyzer](docs/MetaAnalyzer.md)
- - [MetaBoolQuery](docs/MetaBoolQuery.md)
- - [MetaDateRange](docs/MetaDateRange.md)
- - [MetaExistsQuery](docs/MetaExistsQuery.md)
- - [MetaFuzzyQuery](docs/MetaFuzzyQuery.md)
- - [MetaHTTPResponse](docs/MetaHTTPResponse.md)
- - [MetaHTTPResponseDocument](docs/MetaHTTPResponseDocument.md)
- - [MetaHTTPResponseError](docs/MetaHTTPResponseError.md)
- - [MetaHTTPResponseID](docs/MetaHTTPResponseID.md)
- - [MetaHTTPResponseIndex](docs/MetaHTTPResponseIndex.md)
- - [MetaHTTPResponseRecordCount](docs/MetaHTTPResponseRecordCount.md)
- - [MetaHTTPResponseTemplate](docs/MetaHTTPResponseTemplate.md)
- - [MetaHealthzResponse](docs/MetaHealthzResponse.md)
- - [MetaHighlight](docs/MetaHighlight.md)
- - [MetaHit](docs/MetaHit.md)
- - [MetaHits](docs/MetaHits.md)
- - [MetaIPRange](docs/MetaIPRange.md)
- - [MetaIdsQuery](docs/MetaIdsQuery.md)
- - [MetaIndexAnalysis](docs/MetaIndexAnalysis.md)
- - [MetaIndexSettings](docs/MetaIndexSettings.md)
- - [MetaIndexShard](docs/MetaIndexShard.md)
- - [MetaIndexSimple](docs/MetaIndexSimple.md)
- - [MetaIndexTemplate](docs/MetaIndexTemplate.md)
- - [MetaMappings](docs/MetaMappings.md)
- - [MetaMatchBoolPrefixQuery](docs/MetaMatchBoolPrefixQuery.md)
- - [MetaMatchPhrasePrefixQuery](docs/MetaMatchPhrasePrefixQuery.md)
- - [MetaMatchPhraseQuery](docs/MetaMatchPhraseQuery.md)
- - [MetaMatchQuery](docs/MetaMatchQuery.md)
- - [MetaMultiMatchQuery](docs/MetaMultiMatchQuery.md)
- - [MetaPrefixQuery](docs/MetaPrefixQuery.md)
- - [MetaProperty](docs/MetaProperty.md)
- - [MetaQuery](docs/MetaQuery.md)
- - [MetaQueryStringQuery](docs/MetaQueryStringQuery.md)
- - [MetaRange](docs/MetaRange.md)
- - [MetaRangeQuery](docs/MetaRangeQuery.md)
- - [MetaRegexpQuery](docs/MetaRegexpQuery.md)
- - [MetaSearchResponse](docs/MetaSearchResponse.md)
- - [MetaShards](docs/MetaShards.md)
- - [MetaSimpleQueryStringQuery](docs/MetaSimpleQueryStringQuery.md)
- - [MetaTemplate](docs/MetaTemplate.md)
- - [MetaTemplateTemplate](docs/MetaTemplateTemplate.md)
- - [MetaTermQuery](docs/MetaTermQuery.md)
- - [MetaTotal](docs/MetaTotal.md)
- - [MetaUser](docs/MetaUser.md)
- - [MetaVersionResponse](docs/MetaVersionResponse.md)
- - [MetaWildcardQuery](docs/MetaWildcardQuery.md)
- - [MetaZincQuery](docs/MetaZincQuery.md)
- - [V1AggregationBucket](docs/V1AggregationBucket.md)
- - [V1AggregationDateRange](docs/V1AggregationDateRange.md)
- - [V1AggregationNumberRange](docs/V1AggregationNumberRange.md)
- - [V1AggregationParams](docs/V1AggregationParams.md)
- - [V1AggregationResponse](docs/V1AggregationResponse.md)
- - [V1Hit](docs/V1Hit.md)
- - [V1Hits](docs/V1Hits.md)
- - [V1QueryHighlight](docs/V1QueryHighlight.md)
- - [V1QueryParams](docs/V1QueryParams.md)
- - [V1SearchResponse](docs/V1SearchResponse.md)
- - [V1Total](docs/V1Total.md)
- - [V1ZincQuery](docs/V1ZincQuery.md)
+ - [AggregationHistogramBound](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/AggregationHistogramBound.md)
+ - [AuthLoginRequest](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/AuthLoginRequest.md)
+ - [AuthLoginResponse](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/AuthLoginResponse.md)
+ - [AuthLoginUser](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/AuthLoginUser.md)
+ - [CoreIndex](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/CoreIndex.md)
+ - [IndexAnalyzeResponse](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/IndexAnalyzeResponse.md)
+ - [IndexAnalyzeResponseToken](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/IndexAnalyzeResponseToken.md)
+ - [MetaAggregationAutoDateHistogram](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaAggregationAutoDateHistogram.md)
+ - [MetaAggregationDateHistogram](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaAggregationDateHistogram.md)
+ - [MetaAggregationDateRange](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaAggregationDateRange.md)
+ - [MetaAggregationHistogram](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaAggregationHistogram.md)
+ - [MetaAggregationIPRange](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaAggregationIPRange.md)
+ - [MetaAggregationMetric](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaAggregationMetric.md)
+ - [MetaAggregationRange](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaAggregationRange.md)
+ - [MetaAggregationResponse](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaAggregationResponse.md)
+ - [MetaAggregations](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaAggregations.md)
+ - [MetaAggregationsTerms](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaAggregationsTerms.md)
+ - [MetaAnalyzer](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaAnalyzer.md)
+ - [MetaBoolQuery](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaBoolQuery.md)
+ - [MetaDateRange](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaDateRange.md)
+ - [MetaExistsQuery](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaExistsQuery.md)
+ - [MetaFuzzyQuery](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaFuzzyQuery.md)
+ - [MetaHTTPResponse](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaHTTPResponse.md)
+ - [MetaHTTPResponseDocument](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaHTTPResponseDocument.md)
+ - [MetaHTTPResponseError](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaHTTPResponseError.md)
+ - [MetaHTTPResponseID](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaHTTPResponseID.md)
+ - [MetaHTTPResponseIndex](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaHTTPResponseIndex.md)
+ - [MetaHTTPResponseRecordCount](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaHTTPResponseRecordCount.md)
+ - [MetaHTTPResponseTemplate](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaHTTPResponseTemplate.md)
+ - [MetaHealthzResponse](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaHealthzResponse.md)
+ - [MetaHighlight](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaHighlight.md)
+ - [MetaHit](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaHit.md)
+ - [MetaHits](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaHits.md)
+ - [MetaIPRange](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaIPRange.md)
+ - [MetaIdsQuery](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaIdsQuery.md)
+ - [MetaIndexAnalysis](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaIndexAnalysis.md)
+ - [MetaIndexSettings](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaIndexSettings.md)
+ - [MetaIndexShard](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaIndexShard.md)
+ - [MetaIndexSimple](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaIndexSimple.md)
+ - [MetaIndexTemplate](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaIndexTemplate.md)
+ - [MetaMappings](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaMappings.md)
+ - [MetaMatchBoolPrefixQuery](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaMatchBoolPrefixQuery.md)
+ - [MetaMatchPhrasePrefixQuery](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaMatchPhrasePrefixQuery.md)
+ - [MetaMatchPhraseQuery](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaMatchPhraseQuery.md)
+ - [MetaMatchQuery](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaMatchQuery.md)
+ - [MetaMultiMatchQuery](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaMultiMatchQuery.md)
+ - [MetaPrefixQuery](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaPrefixQuery.md)
+ - [MetaProperty](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaProperty.md)
+ - [MetaQuery](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaQuery.md)
+ - [MetaQueryStringQuery](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaQueryStringQuery.md)
+ - [MetaRange](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaRange.md)
+ - [MetaRangeQuery](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaRangeQuery.md)
+ - [MetaRegexpQuery](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaRegexpQuery.md)
+ - [MetaSearchResponse](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaSearchResponse.md)
+ - [MetaShards](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaShards.md)
+ - [MetaSimpleQueryStringQuery](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaSimpleQueryStringQuery.md)
+ - [MetaTemplate](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaTemplate.md)
+ - [MetaTemplateTemplate](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaTemplateTemplate.md)
+ - [MetaTermQuery](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaTermQuery.md)
+ - [MetaTotal](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaTotal.md)
+ - [MetaUser](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaUser.md)
+ - [MetaVersionResponse](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaVersionResponse.md)
+ - [MetaWildcardQuery](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaWildcardQuery.md)
+ - [MetaZincQuery](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/MetaZincQuery.md)
+ - [V1AggregationBucket](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/V1AggregationBucket.md)
+ - [V1AggregationDateRange](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/V1AggregationDateRange.md)
+ - [V1AggregationNumberRange](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/V1AggregationNumberRange.md)
+ - [V1AggregationParams](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/V1AggregationParams.md)
+ - [V1AggregationResponse](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/V1AggregationResponse.md)
+ - [V1Hit](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/V1Hit.md)
+ - [V1Hits](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/V1Hits.md)
+ - [V1QueryHighlight](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/V1QueryHighlight.md)
+ - [V1QueryParams](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/V1QueryParams.md)
+ - [V1SearchResponse](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/V1SearchResponse.md)
+ - [V1Total](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/V1Total.md)
+ - [V1ZincQuery](https://github.com/zinclabs/sdk-python-zincsearch/tree/main/docs/V1ZincQuery.md)
 
 
 ## Documentation For Authorization
