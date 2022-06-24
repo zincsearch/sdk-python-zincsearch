@@ -1,0 +1,87 @@
+# flake8: noqa
+
+# import all models into this package
+# if you have many models here with many references from one model to another this may
+# raise a RecursionError
+# to avoid this, import only the models that you directly need like:
+# from from zincsearch_sdk.model.pet import Pet
+# or import this package, but before doing it, use:
+# import sys
+# sys.setrecursionlimit(n)
+
+from zincsearch_sdk.model.aggregation_histogram_bound import AggregationHistogramBound
+from zincsearch_sdk.model.auth_login_request import AuthLoginRequest
+from zincsearch_sdk.model.auth_login_response import AuthLoginResponse
+from zincsearch_sdk.model.auth_login_user import AuthLoginUser
+from zincsearch_sdk.model.core_index import CoreIndex
+from zincsearch_sdk.model.index_analyze_response import IndexAnalyzeResponse
+from zincsearch_sdk.model.index_analyze_response_token import IndexAnalyzeResponseToken
+from zincsearch_sdk.model.meta_aggregation_auto_date_histogram import MetaAggregationAutoDateHistogram
+from zincsearch_sdk.model.meta_aggregation_date_histogram import MetaAggregationDateHistogram
+from zincsearch_sdk.model.meta_aggregation_date_range import MetaAggregationDateRange
+from zincsearch_sdk.model.meta_aggregation_histogram import MetaAggregationHistogram
+from zincsearch_sdk.model.meta_aggregation_ip_range import MetaAggregationIPRange
+from zincsearch_sdk.model.meta_aggregation_metric import MetaAggregationMetric
+from zincsearch_sdk.model.meta_aggregation_range import MetaAggregationRange
+from zincsearch_sdk.model.meta_aggregation_response import MetaAggregationResponse
+from zincsearch_sdk.model.meta_aggregations import MetaAggregations
+from zincsearch_sdk.model.meta_aggregations_terms import MetaAggregationsTerms
+from zincsearch_sdk.model.meta_analyzer import MetaAnalyzer
+from zincsearch_sdk.model.meta_bool_query import MetaBoolQuery
+from zincsearch_sdk.model.meta_date_range import MetaDateRange
+from zincsearch_sdk.model.meta_exists_query import MetaExistsQuery
+from zincsearch_sdk.model.meta_fuzzy_query import MetaFuzzyQuery
+from zincsearch_sdk.model.meta_http_response import MetaHTTPResponse
+from zincsearch_sdk.model.meta_http_response_document import MetaHTTPResponseDocument
+from zincsearch_sdk.model.meta_http_response_error import MetaHTTPResponseError
+from zincsearch_sdk.model.meta_http_response_id import MetaHTTPResponseID
+from zincsearch_sdk.model.meta_http_response_index import MetaHTTPResponseIndex
+from zincsearch_sdk.model.meta_http_response_record_count import MetaHTTPResponseRecordCount
+from zincsearch_sdk.model.meta_http_response_template import MetaHTTPResponseTemplate
+from zincsearch_sdk.model.meta_healthz_response import MetaHealthzResponse
+from zincsearch_sdk.model.meta_highlight import MetaHighlight
+from zincsearch_sdk.model.meta_hit import MetaHit
+from zincsearch_sdk.model.meta_hits import MetaHits
+from zincsearch_sdk.model.meta_ip_range import MetaIPRange
+from zincsearch_sdk.model.meta_ids_query import MetaIdsQuery
+from zincsearch_sdk.model.meta_index_analysis import MetaIndexAnalysis
+from zincsearch_sdk.model.meta_index_settings import MetaIndexSettings
+from zincsearch_sdk.model.meta_index_shard import MetaIndexShard
+from zincsearch_sdk.model.meta_index_simple import MetaIndexSimple
+from zincsearch_sdk.model.meta_index_template import MetaIndexTemplate
+from zincsearch_sdk.model.meta_mappings import MetaMappings
+from zincsearch_sdk.model.meta_match_bool_prefix_query import MetaMatchBoolPrefixQuery
+from zincsearch_sdk.model.meta_match_phrase_prefix_query import MetaMatchPhrasePrefixQuery
+from zincsearch_sdk.model.meta_match_phrase_query import MetaMatchPhraseQuery
+from zincsearch_sdk.model.meta_match_query import MetaMatchQuery
+from zincsearch_sdk.model.meta_multi_match_query import MetaMultiMatchQuery
+from zincsearch_sdk.model.meta_prefix_query import MetaPrefixQuery
+from zincsearch_sdk.model.meta_property import MetaProperty
+from zincsearch_sdk.model.meta_query import MetaQuery
+from zincsearch_sdk.model.meta_query_string_query import MetaQueryStringQuery
+from zincsearch_sdk.model.meta_range import MetaRange
+from zincsearch_sdk.model.meta_range_query import MetaRangeQuery
+from zincsearch_sdk.model.meta_regexp_query import MetaRegexpQuery
+from zincsearch_sdk.model.meta_search_response import MetaSearchResponse
+from zincsearch_sdk.model.meta_shards import MetaShards
+from zincsearch_sdk.model.meta_simple_query_string_query import MetaSimpleQueryStringQuery
+from zincsearch_sdk.model.meta_template import MetaTemplate
+from zincsearch_sdk.model.meta_template_template import MetaTemplateTemplate
+from zincsearch_sdk.model.meta_term_query import MetaTermQuery
+from zincsearch_sdk.model.meta_total import MetaTotal
+from zincsearch_sdk.model.meta_user import MetaUser
+from zincsearch_sdk.model.meta_version_response import MetaVersionResponse
+from zincsearch_sdk.model.meta_wildcard_query import MetaWildcardQuery
+from zincsearch_sdk.model.meta_zinc_query import MetaZincQuery
+from zincsearch_sdk.model.v1_aggregation_bucket import V1AggregationBucket
+from zincsearch_sdk.model.v1_aggregation_date_range import V1AggregationDateRange
+from zincsearch_sdk.model.v1_aggregation_number_range import V1AggregationNumberRange
+from zincsearch_sdk.model.v1_aggregation_params import V1AggregationParams
+from zincsearch_sdk.model.v1_aggregation_response import V1AggregationResponse
+from zincsearch_sdk.model.v1_hit import V1Hit
+from zincsearch_sdk.model.v1_hits import V1Hits
+from zincsearch_sdk.model.v1_query_highlight import V1QueryHighlight
+from zincsearch_sdk.model.v1_query_params import V1QueryParams
+from zincsearch_sdk.model.v1_search_response import V1SearchResponse
+from zincsearch_sdk.model.v1_total import V1Total
+from zincsearch_sdk.model.v1_zinc_query import V1ZincQuery
