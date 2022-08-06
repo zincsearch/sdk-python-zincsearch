@@ -17,7 +17,7 @@
 import time
 import zincsearch_sdk
 from zincsearch_sdk.api import index
-from zincsearch_sdk.model.meta_http_response_error import MetaHTTPResponseError
+from zincsearch_sdk.model.meta_http_response import MetaHTTPResponse
 from pprint import pprint
 
 # Configure HTTP basic authorization: basicAuth

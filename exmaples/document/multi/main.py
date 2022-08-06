@@ -33,6 +33,7 @@ configuration = zincsearch_sdk.Configuration(
 with zincsearch_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = document.Document(api_client)
+    index = "index_example" # str | Index
     query = [
         {"name": "John Doe", "age": 30, "address": "123 Main St"},
         {"name": "John Doe", "age": 30, "address": "123 Main St"}
@@ -43,7 +44,7 @@ with zincsearch_sdk.ApiClient(configuration) as api_client:
     # example passing only required values which don't have defaults set
     try:
         # Bulk documents
-        api_response = api_instance.multi(query_to_post)
+        api_response = api_instance.multi(index, query_to_post)
         pprint(api_response)
     except zincsearch_sdk.ApiException as e:
         print("Exception when calling Document->multi: %s\n" % e)

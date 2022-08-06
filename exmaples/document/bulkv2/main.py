@@ -18,6 +18,7 @@ import time
 import json
 import zincsearch_sdk
 from zincsearch_sdk.api import document
+from zincsearch_sdk.model.meta_json_ingest import MetaJSONIngest
 from zincsearch_sdk.model.meta_http_response_error import MetaHTTPResponseError
 from zincsearch_sdk.model.meta_http_response_record_count import MetaHTTPResponseRecordCount
 from pprint import pprint
@@ -33,20 +34,18 @@ configuration = zincsearch_sdk.Configuration(
 with zincsearch_sdk.ApiClient(configuration) as api_client:
     # Create an instance of the API class
     api_instance = document.Document(api_client)
-    query = {
-        "index": "index_example",
-        "records": [
+    query = MetaJSONIngest(
+        index="index_example",
+        records=[
             {"name": "John Doe", "age": 30, "address": "123 Main St"},
             {"name": "John Doe", "age": 30, "address": "123 Main St"}
-        ]
-     } # str | Query
-    query_to_post = json.dumps(d)
-
+        ],
+    ) # MetaJSONIngest | Query
 
     # example passing only required values which don't have defaults set
     try:
         # Bulk documents
-        api_response = api_instance.bulkv2(query_to_post)
+        api_response = api_instance.bulkv2(query)
         pprint(api_response)
     except zincsearch_sdk.ApiException as e:
         print("Exception when calling Document->bulkv2: %s\n" % e)
