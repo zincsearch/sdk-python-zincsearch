@@ -13,9 +13,9 @@ from zincsearch_sdk.model.aggregation_histogram_bound import AggregationHistogra
 from zincsearch_sdk.model.auth_login_request import AuthLoginRequest
 from zincsearch_sdk.model.auth_login_response import AuthLoginResponse
 from zincsearch_sdk.model.auth_login_user import AuthLoginUser
-from zincsearch_sdk.model.core_index import CoreIndex
 from zincsearch_sdk.model.index_analyze_response import IndexAnalyzeResponse
 from zincsearch_sdk.model.index_analyze_response_token import IndexAnalyzeResponseToken
+from zincsearch_sdk.model.index_index_list_response import IndexIndexListResponse
 from zincsearch_sdk.model.meta_aggregation_auto_date_histogram import MetaAggregationAutoDateHistogram
 from zincsearch_sdk.model.meta_aggregation_date_histogram import MetaAggregationDateHistogram
 from zincsearch_sdk.model.meta_aggregation_date_range import MetaAggregationDateRange
@@ -46,15 +46,16 @@ from zincsearch_sdk.model.meta_ip_range import MetaIPRange
 from zincsearch_sdk.model.meta_ids_query import MetaIdsQuery
 from zincsearch_sdk.model.meta_index_analysis import MetaIndexAnalysis
 from zincsearch_sdk.model.meta_index_settings import MetaIndexSettings
-from zincsearch_sdk.model.meta_index_shard import MetaIndexShard
 from zincsearch_sdk.model.meta_index_simple import MetaIndexSimple
 from zincsearch_sdk.model.meta_index_template import MetaIndexTemplate
+from zincsearch_sdk.model.meta_json_ingest import MetaJSONIngest
 from zincsearch_sdk.model.meta_mappings import MetaMappings
 from zincsearch_sdk.model.meta_match_bool_prefix_query import MetaMatchBoolPrefixQuery
 from zincsearch_sdk.model.meta_match_phrase_prefix_query import MetaMatchPhrasePrefixQuery
 from zincsearch_sdk.model.meta_match_phrase_query import MetaMatchPhraseQuery
 from zincsearch_sdk.model.meta_match_query import MetaMatchQuery
 from zincsearch_sdk.model.meta_multi_match_query import MetaMultiMatchQuery
+from zincsearch_sdk.model.meta_page import MetaPage
 from zincsearch_sdk.model.meta_prefix_query import MetaPrefixQuery
 from zincsearch_sdk.model.meta_property import MetaProperty
 from zincsearch_sdk.model.meta_query import MetaQuery
@@ -80,7 +81,6 @@ from zincsearch_sdk.model.v1_aggregation_params import V1AggregationParams
 from zincsearch_sdk.model.v1_aggregation_response import V1AggregationResponse
 from zincsearch_sdk.model.v1_hit import V1Hit
 from zincsearch_sdk.model.v1_hits import V1Hits
-from zincsearch_sdk.model.v1_query_highlight import V1QueryHighlight
 from zincsearch_sdk.model.v1_query_params import V1QueryParams
 from zincsearch_sdk.model.v1_search_response import V1SearchResponse
 from zincsearch_sdk.model.v1_total import V1Total

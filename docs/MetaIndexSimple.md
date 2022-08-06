@@ -7,6 +7,7 @@ Name | Type | Description | Notes
 **mappings** | **bool, date, datetime, dict, float, int, list, str, none_type** |  | [optional] 
 **name** | **str** |  | [optional] 
 **settings** | [**MetaIndexSettings**](MetaIndexSettings.md) |  | [optional] 
+**shard_num** | **int** |  | [optional] 
 **storage_type** | **str** |  | [optional] 
 **any string name** | **bool, date, datetime, dict, float, int, list, str, none_type** | any string name can be used but the value must be the correct type | [optional]
 

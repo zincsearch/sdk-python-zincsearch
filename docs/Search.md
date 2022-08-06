@@ -516,11 +516,18 @@ with zincsearch_sdk.ApiClient(configuration) as api_client:
         },
         explain=True,
         _from=1,
-        highlight=V1QueryHighlight(
-            fields=[
-                "fields_example",
+        highlight=MetaHighlight(
+            fields={
+                "key": MetaHighlight(),
+            },
+            fragment_size=1,
+            number_of_fragments=1,
+            post_tags=[
+                "post_tags_example",
             ],
-            style="style_example",
+            pre_tags=[
+                "pre_tags_example",
+            ],
         ),
         max_results=1,
         query=V1QueryParams(

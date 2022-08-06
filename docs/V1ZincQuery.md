@@ -8,7 +8,7 @@ Name | Type | Description | Notes
 **aggs** | [**{str: (V1AggregationParams,)}**](V1AggregationParams.md) |  | [optional] 
 **explain** | **bool** |  | [optional] 
 **_from** | **int** |  | [optional] 
-**highlight** | [**V1QueryHighlight**](V1QueryHighlight.md) |  | [optional] 
+**highlight** | [**MetaHighlight**](MetaHighlight.md) |  | [optional] 
 **max_results** | **int** |  | [optional] 
 **query** | [**V1QueryParams**](V1QueryParams.md) |  | [optional] 
 **search_type** | **str** | SearchType is the type of search to perform. Can be match, match_phrase, query_string, etc | [optional] 
