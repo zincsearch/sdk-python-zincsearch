@@ -4,6 +4,7 @@ All URIs are relative to *http://localhost:4080*
 
 Method | HTTP request | Description
 ------------- | ------------- | -------------
+[**add_or_remove_es_alias**](Index.md#add_or_remove_es_alias) | **POST** /es/_aliases | Add or remove index alias for compatible ES
 [**analyze**](Index.md#analyze) | **POST** /api/_analyze | Analyze
 [**analyze_index**](Index.md#analyze_index) | **POST** /api/{index}/_analyze | Analyze
 [**create**](Index.md#create) | **POST** /api/index | Create index
@@ -14,6 +15,8 @@ Method | HTTP request | Description
 [**e_s_get_mapping**](Index.md#e_s_get_mapping) | **GET** /es/{index}/_mapping | Get index mappings for compatible ES
 [**es_exists**](Index.md#es_exists) | **HEAD** /es/{index} | Checks if the index exists for compatible ES
 [**exists**](Index.md#exists) | **HEAD** /api/index/{index} | Checks if the index exists
+[**get_es_aliases**](Index.md#get_es_aliases) | **GET** /es/{target}/_alias/{target_alias} | Get index alias for compatible ES
+[**get_index**](Index.md#get_index) | **GET** /api/index/{index} | Get index metadata
 [**get_mapping**](Index.md#get_mapping) | **GET** /api/{index}/_mapping | Get index mappings
 [**get_settings**](Index.md#get_settings) | **GET** /api/{index}/_settings | Get index settings
 [**get_template**](Index.md#get_template) | **GET** /es/_index_template/{name} | Get index template
@@ -25,6 +28,79 @@ Method | HTTP request | Description
 [**set_settings**](Index.md#set_settings) | **PUT** /api/{index}/_settings | Set index Settings
 [**update_template**](Index.md#update_template) | **PUT** /es/_index_template/{name} | Create update index template
 
+
+# **add_or_remove_es_alias**
+> bool, date, datetime, dict, float, int, list, str, none_type add_or_remove_es_alias()
+
+Add or remove index alias for compatible ES
+
+### Example
+
+* Basic Authentication (basicAuth):
+
+```python
+import time
+import zincsearch_sdk
+from zincsearch_sdk.api import index
+from zincsearch_sdk.model.meta_http_response_error import MetaHTTPResponseError
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost:4080
+# See configuration.py for a list of all supported configuration parameters.
+configuration = zincsearch_sdk.Configuration(
+    host = "http://localhost:4080"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: basicAuth
+configuration = zincsearch_sdk.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
+
+# Enter a context with an instance of the API client
+with zincsearch_sdk.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = index.Index(api_client)
+
+    # example, this endpoint has no required or optional parameters
+    try:
+        # Add or remove index alias for compatible ES
+        api_response = api_instance.add_or_remove_es_alias()
+        pprint(api_response)
+    except zincsearch_sdk.ApiException as e:
+        print("Exception when calling Index->add_or_remove_es_alias: %s\n" % e)
+```
+
+
+### Parameters
+This endpoint does not need any parameter.
+
+### Return type
+
+**bool, date, datetime, dict, float, int, list, str, none_type**
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
 
 # **analyze**
 > IndexAnalyzeResponse analyze(query)
@@ -918,6 +994,162 @@ Name | Type | Description  | Notes
 ### Return type
 
 [**MetaHTTPResponse**](MetaHTTPResponse.md)
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**404** | Not Found |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **get_es_aliases**
+> bool, date, datetime, dict, float, int, list, str, none_type get_es_aliases(target, target_alias)
+
+Get index alias for compatible ES
+
+### Example
+
+* Basic Authentication (basicAuth):
+
+```python
+import time
+import zincsearch_sdk
+from zincsearch_sdk.api import index
+from zincsearch_sdk.model.meta_http_response_error import MetaHTTPResponseError
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost:4080
+# See configuration.py for a list of all supported configuration parameters.
+configuration = zincsearch_sdk.Configuration(
+    host = "http://localhost:4080"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: basicAuth
+configuration = zincsearch_sdk.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
+
+# Enter a context with an instance of the API client
+with zincsearch_sdk.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = index.Index(api_client)
+    target = "target_example" # str | Target Index
+    target_alias = "target_alias_example" # str | Target Alias
+
+    # example passing only required values which don't have defaults set
+    try:
+        # Get index alias for compatible ES
+        api_response = api_instance.get_es_aliases(target, target_alias)
+        pprint(api_response)
+    except zincsearch_sdk.ApiException as e:
+        print("Exception when calling Index->get_es_aliases: %s\n" % e)
+```
+
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **target** | **str**| Target Index |
+ **target_alias** | **str**| Target Alias |
+
+### Return type
+
+**bool, date, datetime, dict, float, int, list, str, none_type**
+
+### Authorization
+
+[basicAuth](../README.md#basicAuth)
+
+### HTTP request headers
+
+ - **Content-Type**: Not defined
+ - **Accept**: application/json
+
+
+### HTTP response details
+
+| Status code | Description | Response headers |
+|-------------|-------------|------------------|
+**200** | OK |  -  |
+**400** | Bad Request |  -  |
+
+[[Back to top]](#) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to Model list]](../README.md#documentation-for-models) [[Back to README]](../README.md)
+
+# **get_index**
+> bool, date, datetime, dict, float, int, list, str, none_type get_index(index)
+
+Get index metadata
+
+### Example
+
+* Basic Authentication (basicAuth):
+
+```python
+import time
+import zincsearch_sdk
+from zincsearch_sdk.api import index
+from zincsearch_sdk.model.meta_http_response_error import MetaHTTPResponseError
+from pprint import pprint
+# Defining the host is optional and defaults to http://localhost:4080
+# See configuration.py for a list of all supported configuration parameters.
+configuration = zincsearch_sdk.Configuration(
+    host = "http://localhost:4080"
+)
+
+# The client must configure the authentication and authorization parameters
+# in accordance with the API server security policy.
+# Examples for each auth method are provided below, use the example that
+# satisfies your auth use case.
+
+# Configure HTTP basic authorization: basicAuth
+configuration = zincsearch_sdk.Configuration(
+    username = 'YOUR_USERNAME',
+    password = 'YOUR_PASSWORD'
+)
+
+# Enter a context with an instance of the API client
+with zincsearch_sdk.ApiClient(configuration) as api_client:
+    # Create an instance of the API class
+    api_instance = index.Index(api_client)
+    index = "index_example" # str | Index
+
+    # example passing only required values which don't have defaults set
+    try:
+        # Get index metadata
+        api_response = api_instance.get_index(index)
+        pprint(api_response)
+    except zincsearch_sdk.ApiException as e:
+        print("Exception when calling Index->get_index: %s\n" % e)
+```
+
+
+### Parameters
+
+Name | Type | Description  | Notes
+------------- | ------------- | ------------- | -------------
+ **index** | **str**| Index |
+
+### Return type
+
+**bool, date, datetime, dict, float, int, list, str, none_type**
 
 ### Authorization
 

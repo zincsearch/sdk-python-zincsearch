@@ -32,6 +32,7 @@ from zincsearch_sdk.model.meta_date_range import MetaDateRange
 from zincsearch_sdk.model.meta_exists_query import MetaExistsQuery
 from zincsearch_sdk.model.meta_fuzzy_query import MetaFuzzyQuery
 from zincsearch_sdk.model.meta_http_response import MetaHTTPResponse
+from zincsearch_sdk.model.meta_http_response_delete_by_query import MetaHTTPResponseDeleteByQuery
 from zincsearch_sdk.model.meta_http_response_document import MetaHTTPResponseDocument
 from zincsearch_sdk.model.meta_http_response_error import MetaHTTPResponseError
 from zincsearch_sdk.model.meta_http_response_id import MetaHTTPResponseID
@@ -42,6 +43,7 @@ from zincsearch_sdk.model.meta_healthz_response import MetaHealthzResponse
 from zincsearch_sdk.model.meta_highlight import MetaHighlight
 from zincsearch_sdk.model.meta_hit import MetaHit
 from zincsearch_sdk.model.meta_hits import MetaHits
+from zincsearch_sdk.model.meta_http_retries_response import MetaHttpRetriesResponse
 from zincsearch_sdk.model.meta_ip_range import MetaIPRange
 from zincsearch_sdk.model.meta_ids_query import MetaIdsQuery
 from zincsearch_sdk.model.meta_index_analysis import MetaIndexAnalysis
@@ -74,14 +76,8 @@ from zincsearch_sdk.model.meta_user import MetaUser
 from zincsearch_sdk.model.meta_version_response import MetaVersionResponse
 from zincsearch_sdk.model.meta_wildcard_query import MetaWildcardQuery
 from zincsearch_sdk.model.meta_zinc_query import MetaZincQuery
-from zincsearch_sdk.model.v1_aggregation_bucket import V1AggregationBucket
 from zincsearch_sdk.model.v1_aggregation_date_range import V1AggregationDateRange
 from zincsearch_sdk.model.v1_aggregation_number_range import V1AggregationNumberRange
 from zincsearch_sdk.model.v1_aggregation_params import V1AggregationParams
-from zincsearch_sdk.model.v1_aggregation_response import V1AggregationResponse
-from zincsearch_sdk.model.v1_hit import V1Hit
-from zincsearch_sdk.model.v1_hits import V1Hits
 from zincsearch_sdk.model.v1_query_params import V1QueryParams
-from zincsearch_sdk.model.v1_search_response import V1SearchResponse
-from zincsearch_sdk.model.v1_total import V1Total
 from zincsearch_sdk.model.v1_zinc_query import V1ZincQuery
